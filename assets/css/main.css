@@ -8,14 +8,15 @@
     display: flex;
     max-width: 80vw;
     margin: auto;
+
   }
   
   #art1 {
     flex: 3;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1px;
   }
 
   .card {
@@ -23,7 +24,7 @@
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 100px 100px 40px 40px;
+    border-radius: 0px 0px 0px 0px;
     text-align: center;
   }
   
@@ -45,6 +46,7 @@
   img {
     border-radius: 100px 100px 0 0;
     width: 100%;
+    height: auto;
   }
 
   a{
@@ -53,13 +55,13 @@
   
   h2{
     position: relative;
-    font-size: 1.4em;
+    font-size: 2vw;
     font-family: 'Times New Roman', Times, serif;
     max-width: 80%;
     left: 10%;
   }
 
   p{
-    font-size: 1em;
+    font-size: 1vw;
     font-family: 'Times New Roman', Times, serif;
   }

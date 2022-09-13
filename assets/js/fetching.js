@@ -12,6 +12,7 @@ const fetchNews = () => {
             return response.json();
         }
     })
+
     // data er det json jeg har returneret ud fra mit response
     .then((data) => {
         // console.log(data.articles);
@@ -35,7 +36,9 @@ const createCards = (data) => {
 
     document.getElementById("art1").innerHTML += `
     <figure class="card" >
-    <img src=${data.icon} alt=${data.title} >
+    <div class="icon" >
+    ${data.icon}
+    </div>
     <article class="container" >
     <h2> <a href=${data.url} target="_blank" > ${data.title} </a> </h2>
 
