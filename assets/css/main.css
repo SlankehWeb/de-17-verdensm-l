@@ -4,18 +4,19 @@
     box-sizing: border-box;
   }
   
-  #container {
+  #sec1 {
     display: flex;
-    max-width: 80vw;
+    max-width: 70vw;
     margin: auto;
-
+    height: auto;
   }
+  
   
   #art1 {
     flex: 3;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1px;
   }
 
@@ -43,25 +44,19 @@
   }
   
   /* Add rounded corners to the top left and the top right corner of the image */
-  img {
+  .icon {
     border-radius: 100px 100px 0 0;
-    width: 100%;
-    height: auto;
+    width: 80%;
+    margin-left: 10%;
   }
 
   a{
-    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
   }
   
   h2{
     position: relative;
-    font-size: 2vw;
-    font-family: 'Times New Roman', Times, serif;
-    max-width: 80%;
-    left: 10%;
-  }
-
-  p{
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-family: 'Times New Roman', Times, serif;
   }

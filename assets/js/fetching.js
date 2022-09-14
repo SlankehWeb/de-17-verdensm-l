@@ -35,7 +35,7 @@ const fetchNews = () => {
 const createCards = (data) => {
 
     document.getElementById("art1").innerHTML += `
-    <figure class="card" >
+    <figure class="card" style="background-color:#${data.color};" > <a href=${data.url} target="_blank"> 
     <div class="icon" >
     ${data.icon}
     </div>
@@ -43,8 +43,9 @@ const createCards = (data) => {
     <h2> <a href=${data.url} target="_blank" > ${data.title} </a> </h2>
 
     </article>
-    </figure>
+    </a></figure>
     `
+    
 }
 
 fetchNews();
