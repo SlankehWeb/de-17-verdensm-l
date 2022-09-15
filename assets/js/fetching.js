@@ -37,7 +37,7 @@ const fetchNews = () => {
 const createCards = (data) => {
 
     document.getElementById("art1").innerHTML += `
-    <figure  class="card" style="background-color:#${data.color};" '> 
+    <figure class="card" onclick='getDetail(${card.id})' style='background-color: #${card.color}'> 
     <div class="icon" >
     ${data.icon}
     </div>
@@ -52,37 +52,36 @@ const createCards = (data) => {
 
 fetchNews();
 
-// onclick='getDetail(${goals.id}
 // const getDetail = (id) => {
-//     let idData = "";
+//    let idData = "";
 //     const endPoint = `https://api.mediehuset.net/sdg/goals/${id}`;
 
 //     fetch(endPoint)
 //     .then((response) => {
 //         return response.json();
 //     })
-//     .then((data) => {
+//      .then((data) => {
 //         console.log("data", data.item);
 //         idData = data.item;
 //     })
 //     .catch((error) => {
 //         console.error(error);
-//     })
+//      })
 //     .finally(() => {
-//         renderDetails(idData);
+//          renderDetails(idData);
 //     })
 // }
 
 // const renderDetails = (detailData) => {
-//     const{byline, description, icon, image, title} = detailData;
-//     document.getElementById("sec1").innerHTML = `
+//      const{byline, description, icon, image, title} = detailData;
+//     document.getElementById("art1").innerHTML = `
 //     <article >
-//         <h1>${title}</h1>
-//         <h2>${byline}</h2>
+//          <h1>${title}</h1>
+//          <h2>${byline}</h2>
         
 //         ${icon}
 //         <img src="${image}">
-//         <p>${description}</p>
+//          <p>${description}</p>
 //    </article>;
 //    `
 // }
